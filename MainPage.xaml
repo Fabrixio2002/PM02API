@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PM02API.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <StackLayout Padding="0,0,0,0" Orientation="Vertical">
+
+            <Label
+                HorizontalTextAlignment="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="Ejercicio Con APIs"
+                VerticalOptions="StartAndExpand" />
+
+            <Button
+                x:Name="btnVerPosts"
+                Clicked="btnVerPosts_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Ver Posts"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
